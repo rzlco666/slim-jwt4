@@ -29,6 +29,10 @@ return function (ContainerBuilder $containerBuilder) {
                     'dbname' => 'test_jwt',
                     'driver' => 'mysql'
                 ],
+                //JWT
+                'jwt' => [
+                    'secret' => 'supersecretkeyyoushouldnotcommittogithub'
+                ]
             ]);
         }
     ]);
